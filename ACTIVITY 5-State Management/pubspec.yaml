@@ -1,0 +1,58 @@
+name: ticketmaster_live
+description: A Flutter online ticketing system for reservations and payments
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.18.0
+  google_fonts: ^6.1.0
+  provider: ^6.1.1
+  video_player: ^2.8.1
+  chewie: ^1.7.4
+  audioplayers: ^5.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+flutter:
+  uses-material-design: true
+  
+  # COMPONENT 6 & 9 & 18: Assets for local images, videos, and audio
+  # To use these assets:
+  # 1. Create folders: assets/images/, assets/videos/, assets/audio/
+  # 2. Add your image files (jpg, png) to assets/images/
+  # 3. Add your video files (mp4) to assets/videos/
+  # 4. Add your audio files (mp3) to assets/audio/
+  # 5. Then use: Image.asset('assets/images/your_image.jpg')
+  #              VideoPlayerController.asset('assets/videos/your_video.mp4')
+  #              AssetSource('audio/your_audio.mp3')
+  assets:
+    - assets/images/
+    - assets/videos/
+    - assets/audio/
+  
+  # COMPONENT 15: Custom fonts (Roboto and Poppins) via pubspec.yaml
+  # Note: We're using google_fonts package which downloads fonts automatically
+  # If you want to use local fonts instead:
+  # 1. Download Roboto and Poppins font files (.ttf)
+  # 2. Create a fonts/ folder in your project root
+  # 3. Add the font files to fonts/
+  # 4. Uncomment and configure the fonts section below:
+  fonts:
+    - family: Roboto
+      fonts:
+   #     - asset: fonts/Roboto-Regular.ttf
+        - asset: fonts/Roboto-Black.ttf
+          weight: 700
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppin-Regular.ttf
+   #     - asset: fonts/Poppins-Bold.ttf
+          weight: 700
